@@ -13,11 +13,13 @@ Follow the instructions line-by-line.
 ----------
 
 ==========
-2. Create a directory called mtec1002.
+2. Create a directory called mtec1003.
+
+mkdir mtec1003
 ----------
 
 ==========
-3. Change your directory so that you're in mtec1002.
+3. Change your directory so that you're in mtec1003.
 ----------
 
 ==========
@@ -25,11 +27,14 @@ Follow the instructions line-by-line.
 
 $ pwd
 
-Check that the output ends with mtec1002 (something like this: /Users/joe/mtec1002).
+Check that the output ends with mtec1003 (something like this: /Users/bree/mtec1003).
 
-If it doesn't start at #1 again, or ask for help before moving on!
+If it doesn't, start at #1 again, or ask for help before moving on!
 
 Copy and paste the output of pwd below.
+
+/Users/student/mtec1003
+
 ----------
 
 
@@ -41,6 +46,12 @@ $ mkdir animals
 $ ls
 
 Copy and paste the output below.
+
+Applications	Library		Pictures	VirtualBox VMs
+Desktop		Movies		Public		animals
+Documents	Music		Sites		mtec1003
+Downloads	My Song.band	Things		vms
+
 ----------
 
 
@@ -52,6 +63,12 @@ $ mkdir food
 $ ls
 
 Copy and paste the output below.
+
+Applications	Library		Pictures	VirtualBox VMs	vms
+Desktop		Movies		Public		animals
+Documents	Music		Sites		food
+Downloads	My Song.band	Things		mtec1003
+
 ----------
 
 
@@ -63,6 +80,12 @@ $ mkdir -p foo/bar/baz/qux
 $ ls
 
 Copy and paste the output below.
+
+Applications	Library		Pictures	VirtualBox VMs	mtec1003
+Desktop		Movies		Public		animals		vms
+Documents	Music		Sites		foo
+Downloads	My Song.band	Things		food
+
 ----------
 
 
@@ -74,6 +97,9 @@ $ cd foo/bar/baz/qux
 $ pwd
 
 Copy and paste the output below.
+
+/Users/student/foo/bar/baz/qux
+
 ----------
 
 
@@ -85,6 +111,9 @@ $ cd ../..
 $ pwd
 
 Copy and paste the output below.
+
+/Users/student/foo/bar
+
 ----------
 
 
@@ -96,6 +125,9 @@ $ cd -
 $ pwd
 
 Copy and paste the output below.
+
+/Users/student/foo/bar/baz/qux
+
 ----------
 
 
@@ -107,6 +139,9 @@ $ cd ../../../..
 $ pwd
 
 Copy and paste the output below.
+
+/Users/student
+
 ----------
 
 
@@ -119,6 +154,25 @@ $ rmdir animals
 $ ls -l
 
 Copy and paste the first two lines from the output into the space below.
+
+drwx------   3 student  staff   102 Jan 20 17:02 Applications
+drwx------@ 18 student  staff   612 Feb  4 09:50 Desktop
+drwx------+ 31 student  staff  1054 Feb  4 08:55 Documents
+drwx------+  4 student  staff   136 Feb  4 09:42 Downloads
+drwx------@ 60 student  staff  2040 Feb  3 15:58 Library
+drwx------+  9 student  staff   306 Aug 15 22:01 Movies
+drwx------@ 10 student  staff   340 Aug 15 22:12 Music
+drwxrwxr-x@  7 student  staff   238 Jan 22  2010 My Song.band
+drwx------@  8 student  staff   272 Jan 23  2014 Pictures
+drwx------+  6 student  staff   204 Jan 23  2014 Public
+drwxr-xr-x@  6 student  staff   204 Jan 23  2014 Sites
+drwxr-xr-x   6 student  staff   204 Jan 23  2014 Things
+drwx------   5 student  staff   170 Jan 23  2014 VirtualBox VMs
+drwxr-xr-x   3 student  staff   102 Feb  5 12:38 foo
+drwxr-xr-x   2 student  staff    68 Feb  5 12:37 food
+drwxr-xr-x   5 student  staff   170 Feb  2 20:26 mtec1003
+drwxr-xr-x   2 student  staff    68 Jan 23  2014 vms
+
 ----------
 
 
@@ -130,6 +184,9 @@ $ cd ~
 $ pwd
 
 Copy and paste the output into the space below.
+
+/Users/student
+
 ----------
 
 
@@ -141,6 +198,9 @@ $ cd /Volumes
 $ pwd
 
 Copy and paste the output into the space below.
+
+/Volumes
+
 ----------
 
 
@@ -152,17 +212,8 @@ $ cd /unknown_folder
 $ pwd
 
 Copy and paste the output into the space below.
-----------
 
 
-
-==========
-15. Type:
-
-$ cd ~/mtec1002
-$ pwd
-
-Copy and paste the output into the space below.
 ----------
 
 
@@ -170,23 +221,42 @@ Copy and paste the output into the space below.
 ==========
 16. Type:
 
+$ cd ~/mtec1003
+$ pwd
+
+Copy and paste the output into the space below.
+
+/Users/student/mtec1003
+
+----------
+
+
+
+==========
+17. Type:
+
 $ hostname
 
 Copy and paste the output into the space below.
+
+ENT-V321-013.local
+
 ----------
 
 
 
 ==========
-17a. Make sure you're back in your mtec1002, which should be in your home folder.  What command would you use to find out if you're in the right folder?  Write the command below, then run it.
+18a. Make sure you're back in your mtec1003, which should be in your home folder.  What command would you use to find out if you're in the right folder?  Write the command below, then run it.
+
+pwd
 ----------
 
 
 
 ==========
-17b. If you're not in the right directory, type the following command:
+18b. If you're not in the right directory, type the following command:
 
-cd ~/mtec1002
+cd ~/mtec1003
 
 Otherwise skip this question/step!
 ----------
@@ -194,97 +264,126 @@ Otherwise skip this question/step!
 
 
 ==========
-18. Create the following directories, with each one inside each other.  The first one, pinapple, is the inner most:
+19. Create the following directories, with each one inside each other.  The first one, pineapple, is the inner most:
 
 pineapple
 orange
-strawbery
+strawberry
 lemon
 
-Use only one command to make all of these new directories.  Write what command you used below:
+Use only one command to make all of these new directories.  Write what command you used
+below:
+
+mkdir
 ----------
 
 
 
 ==========
-19. Make another directory called aardvark.  
+20. Make another directory called aardvark.  
 
 Write the command you used to create the directory below:
+
+mkdir
 ----------
 
 
 
 ==========
-20. List the files and directories in the current directory using the long format.  
+21. List the files and directories in the current directory using the long format.  
 
 What is the modified date of the aardvark directory?
+
+drwxr-xr-x  2 student  staff   68 Feb  5 12:49 aardvark
+
 ----------
 
 
 
 ==========
-21. Make 3 directories nested within each other:
+22. Make 3 directories nested within each other:
 
 * foo should be the outermost directory
 * bar should be the inside foo
 * baz should be inside bar
 
 What command did you use?
+
+cd foo/bar/baz
+
 ----------
 
 
 
 ==========
-22. Change your directory so that you're in the inner most directory (baz)
+23. Change your directory so that you're in the inner most directory (baz)
 
 What command did you use?
+
+cd baz/foo/bar
 ----------
 
 
 
 ==========
-23. Change your directory so that you're two directories up (foo)
+24. Change your directory so that you're two directories up (foo)
 
 What command did you use?
+
+pushd
 ----------
 
 
 ==========
-24. What command is used to delete empty directories?
-----------
+25. What command is used to delete empty directories?
 
-
-
-==========
-25. What command is used to print out your current working directory?
+rmdir
 ----------
 
 
 
 ==========
-26. What flag do I pass to ls to print out all files?
+26. What command is used to print out your current working directory?
+
+ctrl+p or -l
 ----------
 
 
 
 ==========
-27. What's the shortcut for home directory?
+27. What flag do I pass to ls to print out all files?
+
+-a
 ----------
 
 
 
 ==========
-28. What's a pathname?
+28. What's the shortcut for home directory?
+
+~
 ----------
 
 
 
 ==========
-29. What's a directory?
+29. What's a pathname?
+
+the name of a file/directory.
 ----------
 
 
 
 ==========
-30. What's the *absolute* path (full path, starting at root) to your user's Downloads directory?
+30. What's a directory?
+
+a file system that reference other files.
 ----------
+
+
+
+==========
+31. What's the *absolute* path (full path, starting at root) to your user's Downloads directory?
+
+ENT-V321-013:downloads student$ 
+
